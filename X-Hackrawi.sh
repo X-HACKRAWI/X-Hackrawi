@@ -35,6 +35,8 @@ echo -e $green '{-3-}' $red '--install ssh'
 echo ""
 echo -e $green '{-4-}' $red '--start port'
 echo ""
+echo -e $green '{-5-}' $red '--Install MetaSploit Framework'
+echo ""
 echo -e $green '{-0-}' $red '--exit '
 echo ""
 echo -e $white "Insert A Number "
@@ -195,6 +197,20 @@ read -p "Please Insert PORT :>" port
 echo ""
 ssh -R $port:localhost:4444 serveo.net
 clear
+bash X-Hackrawi.sh
+fi
+if [ $menu = 5 ]
+then
+echo -e $red
+figlet MSF
+echo " "
+echo -e $green "Downloading metasploit , this could take a while ..."
+apt update -y
+apt install unstable-repo
+apt install metasploit
+echo " "
+echo -e $green "MSF Has Been Downloaded ✔"
+sleep 2
 bash X-Hackrawi.sh
 fi
 if [ $menu = 0 ]
