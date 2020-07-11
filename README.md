@@ -1,5 +1,5 @@
 # X-Hackrawi
-$git  clone https://github.com/hackrwei/X-Hackrawi
+$git  clone https://github.com/X-HACKRAWI/X-Hackrawi
 
 $cd X-Hackrawi
 
