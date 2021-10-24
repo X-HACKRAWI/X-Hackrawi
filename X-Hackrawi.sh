@@ -8,7 +8,7 @@ cyan='\e[1;36m'
 white='\e[1;37m'
 yellow='\e[1;33m'
 
-function  baaner (){
+baaner (){
     
     echo -e $green '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
     echo ##
